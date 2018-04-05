@@ -1,0 +1,79 @@
+<html>
+<head><title>quiz
+</title>
+    <style>
+    body
+    {
+    background-color:floralwhite;
+    }
+        .grid{
+            width:600px;
+            height:500px;
+            margin:0 auto;
+			background-color:#fff;
+			border-radius:10px;
+			padding: 10px 50px 50px 50px;
+			box-shadow:20px;
+			border:2px solid cornsilk;
+             
+            
+        }
+		.grid h1{
+		font-family:sans-serif;
+		background-color:#57363e;
+		text-align:center;
+		padding:0px 2px;
+		color:white;
+		border-radius:50px;
+		}
+		 .grid question{
+		 font-size:30px;
+		 color:gray;
+		 font-family:sans-serif;
+		 padding:30px;
+		 text-align:center;
+		 
+		 }
+		
+#progress{
+color:#2b2b2b;
+font-size:18px;
+text-align:center;
+}     
+#opt1,#opt2,#opt3,opt4{
+padding:20px;
+margin:30px;
+margin-left:40px;
+margin-right:80px;
+
+}
+.option{
+width:470px;
+display:inline-block;
+padding:0px,10px,0px,10px}
+       
+    </style>
+    
+</head>
+<body>
+<div class ="grid">
+<div id="quiz">
+<h1>QUIZ</h1>
+<hr style="margin-bottom:20px" ></hr>
+<p id="question"></p>
+<label class="option"> <input type="radio" name="option" value="1"/><span id="opt1"></label>
+<label class="option"> <input type="radio" name="option" value="2"/><span id="opt2"></label>
+<label class="option"> <input type="radio" name="option" value="3"/><span id="opt3"></label>
+<label class="option"> <input type="radio" name="option" value="4"/><span id="opt4"></label>
+
+<center><button id="next" onclick="loadnext();">Next</button></center>
+
+</div>
+<hr style="margin-top:40px"></hr>
+
+<div id="results" class="container-result" style="display:none;"></div>
+</div>
+</div>
+<script src="quiz1.js"></script> 
+</body>
+</html>
